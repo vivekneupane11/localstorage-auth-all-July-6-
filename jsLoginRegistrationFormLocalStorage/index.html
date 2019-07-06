@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navigation-bar">
+            <ul>
+                <li> <i class="fa fa-home"></i> Home</li>
+                <li> <i class="fa fa-phone"></i> Contact Us</li>
+                <li> <i class="fa fa-user"></i> About Us</li>
+                <li> <i class="fa fa-home"></i> Blog</li>
+                <li> <i class="fa fa-shopping-cart"></i> Shop</li>
+
+            </ul>
+
+            <p><i class="fas fa-user-plus"></i><span id="welcome">Register/Login Now</span> <span id="alllist"></span>
+                <button id="register"><i class="fas fa-sign-in-alt"></i> Register</button> <button id="login"><i class="fas fa-sign-in-alt"></i> Log In</button>
+            </p>
+            </p>
+        </div>
+        <!-- navigation bar -->
+
+        <form action="#">
+
+            <div class="form-left" id="form-left">
+
+                <div> <i class="fas fa-user input-icon" id="usericon"></i><input type="text" id="username-input" name="text" placeholder="Enter your name"></div>
+
+                <span id="username-error"> <i class="fas fa-exclamation-triangle"></i> Invalid Username</span>
+
+                <div> <i class="fas fa-envelope input-icon" id="emailicon"></i><input type="email" id="email-input" name="text" placeholder="Enter your email address"></div>
+
+                <span id="email-error"> <i class="fas fa-exclamation-triangle"></i> Invalid email address</span>
+
+                <div> <i class="fas fa-key input-icon" id="passwordicon"></i><input type="password" id="password-input" name="text" placeholder="Enter your password"></div>
+
+                <div> <i class="fas fa-lock input-icon" id="cpasswordicon"></i><input type="password" id="cpassword-input" name="text" placeholder="Confirm your password"></div>
+
+                <span id="password-error"> <i class="fas fa-exclamation-triangle"></i> Invalide passwords or not
+                    matching.</span>
+            </div>
+
+            <div class="form-right" id="form-right">
+                <div> <i class="fas fa-phone input-icon" id="contacticon"></i><input type="text" id="contact-input" name="text" placeholder="Enter your contact information"></div>
+
+                <span id="contact-error"> <i class="fas fa-exclamation-triangle"></i> Invalid contact</span>
+
+                <div><i class="fas fa-user-tie input-icon"></i><input type="text" id="job-input" placeholder="(Optional*) Enter your profession"></div>
+
+                <div> <i class="fas fa-transgender input-icon"></i>
+                    <select name="cars" class="select" id="gender-input">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+
+                    </select> </div>
+
+                <button id="signup-button" disabled><i class="fas fa-lock"></i> Sign Up</button>
+                <p>Already have an account?</p>
+            </div>
+
+            <!-- login starts here -->
+            <div class="login-place" id="login-place">
+                <div> <i class="fas fa-envelope input-icon" id="loginemailicon"></i><input type="email" id="loginemail-input" name="text" placeholder="Enter your email address"></div>
+
+                <span id="loginemail-error"> <i class="fas fa-exclamation-triangle"></i> Invalid email address</span>
+                <div> <i class="fas fa-key input-icon" id="loginpasswordicon"></i><input type="password" id="loginpassword-input" name="text" placeholder="Enter your password"><i id="eyeOpener" class="fas fa-eye"></i></div>
+
+                <span id="loginpassword-error"> <i class="fas fa-exclamation-triangle"></i> Invalide passwords or not
+                    matching.</span>
+
+                <button id="login-button" disabled><i class="fas fa-lock"></i> Login In </button>
+
+                <p>Don't have an account?</p>
+
+            </div>
+            <!-- login ends here -->
+
+        </form>
+
+    </div>
+
+    <script src="./js/main.js "></script>
+    <script src="./js/localstorage.js"></script>
+    <script src="./js/md5.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

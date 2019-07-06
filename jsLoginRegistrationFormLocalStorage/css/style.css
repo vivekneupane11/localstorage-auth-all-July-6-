@@ -1,0 +1,378 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', serif;
+}
+
+* .wrapper {
+  min-width: 1200px;
+  height: 100vh;
+}
+
+* .wrapper .navigation-bar {
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  color: #ffb606;
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+}
+
+* .wrapper .navigation-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .wrapper .navigation-bar ul li {
+  list-style: none;
+  padding: 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+* .wrapper .navigation-bar ul li i {
+  padding: 5px;
+}
+
+* .wrapper .navigation-bar ul li:hover {
+  color: #ffb606;
+  font-weight: 900;
+}
+
+* .wrapper p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1.5rem;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  color: #ffb606;
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#434343), to(#000000));
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+}
+
+* .wrapper p i {
+  font-size: 36px;
+  padding: 1rem;
+  color: #ffb606;
+}
+
+* .wrapper p button {
+  float: right;
+  margin-top: 14vh;
+  background: #4b6cb7;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#182848), to(#4b6cb7));
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 220px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  text-align: center;
+}
+
+* .wrapper p button i {
+  font-size: 18px;
+  line-height: 14px;
+}
+
+* .wrapper p button:hover {
+  color: black;
+  background-color: #ffee00;
+}
+
+* .wrapper p button:hover i {
+  color: black;
+}
+
+* .wrapper form {
+  overflow: hidden;
+  position: relative;
+  padding: 3rem;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  border-radius: 80px;
+  height: 60vh;
+  background: #FFEFBA;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#FFEFBA));
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* .wrapper form .form-left {
+  top: 20px;
+  padding: 2rem;
+  margin: 5px;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  height: 280px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .wrapper form .form-left span {
+  background: none;
+  color: red;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-top: 2px;
+  padding: 0;
+  display: none;
+}
+
+* .wrapper form .form-left div {
+  padding: 5px;
+}
+
+* .wrapper form .form-left .input-icon {
+  font-size: 24px;
+  padding: 5px;
+  margin: 5px;
+  top: 3px;
+  color: #ffb606;
+}
+
+* .wrapper form .form-left input {
+  height: 36px;
+  width: 280px;
+  text-indent: 5px;
+  outline: none;
+  border: 0.2px solid #ffb606;
+}
+
+* .wrapper form .form-right {
+  top: 20px;
+  padding: 2rem;
+  margin: 5px;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  height: 280px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .wrapper form .form-right #contact-error {
+  display: none;
+}
+
+* .wrapper form .form-right span {
+  background: none;
+  color: red;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-top: 2px;
+  padding: 0;
+}
+
+* .wrapper form .form-right button {
+  margin: 10px;
+  background-color: #ffee00;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  border: 1px solid black;
+  border: none;
+  height: 40px;
+  width: 220px;
+  margin-left: 60px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  cursor: not-allowed;
+}
+
+* .wrapper form .form-right button i {
+  color: black;
+}
+
+* .wrapper form .form-right p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  margin-top: 20px;
+}
+
+* .wrapper form .form-right div {
+  padding: 5px;
+}
+
+* .wrapper form .form-right div .select {
+  height: 36px;
+  width: 280px;
+  text-indent: 5px;
+  outline: none;
+  border: 0.2px solid #ffb606;
+}
+
+* .wrapper form .form-right .input-icon {
+  font-size: 24px;
+  padding: 5px;
+  margin: 5px;
+  top: 3px;
+  color: #ffb606;
+}
+
+* .wrapper form .form-right input {
+  height: 36px;
+  width: 280px;
+  text-indent: 5px;
+  outline: none;
+  border: 0.2px solid #ffb606;
+}
+
+* .wrapper .login-place {
+  visibility: hidden;
+  position: absolute;
+  top: -60px;
+  padding: 2rem;
+  margin: 5px;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  height: 280px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .wrapper .login-place span {
+  background: none;
+  color: red;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-top: 2px;
+  padding: 0;
+  display: none;
+}
+
+* .wrapper .login-place button {
+  margin: 10px;
+  background-color: #ffee00;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  border: 1px solid black;
+  border: none;
+  height: 40px;
+  width: 220px;
+  margin-left: 60px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  cursor: not-allowed;
+}
+
+* .wrapper .login-place button i {
+  color: black;
+}
+
+* .wrapper .login-place p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  margin-top: 20px;
+}
+
+* .wrapper .login-place div {
+  padding: 5px;
+}
+
+* .wrapper .login-place div .select {
+  height: 36px;
+  width: 280px;
+  text-indent: 5px;
+  outline: none;
+  border: 0.2px solid #ffb606;
+}
+
+* .wrapper .login-place .input-icon {
+  font-size: 24px;
+  padding: 5px;
+  margin: 5px;
+  top: 3px;
+  color: #ffb606;
+}
+
+* .wrapper .login-place input {
+  position: relative;
+  height: 36px;
+  width: 280px;
+  text-indent: 5px;
+  outline: none;
+  border: 0.2px solid #ffb606;
+}
+
+* .wrapper .login-place #eyeOpener {
+  position: absolute;
+  margin-top: 15px;
+  padding: 2px;
+  margin-right: 5px;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
